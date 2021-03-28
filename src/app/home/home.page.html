@@ -1,20 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Todo App
     </ion-title>
   </ion-toolbar>
+  <ion-button class="no-ripple" (click)="openTodoAlert()" style="float: right;margin-right: 21px;" end>
+   
+      <ion-icon slot="icon-only" name="Add"></ion-icon>
+   
+  </ion-button>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large"> Todo App</ion-title>
     </ion-toolbar>
+    
   </ion-header>
+<ion-content>
+<ion-list>
+  <ion-item-sliding *ngFor="let todo of txtTodo">
+    <ion-item>{{todo}}</ion-item>
+    <ion-item-options slide="right">
+      <button color="danger" ion-button>
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+</ion-content>
+ 
 </ion-content>
