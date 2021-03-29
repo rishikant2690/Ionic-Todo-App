@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DemoIonicApp</string>
+    <string name="title_activity_main">DemoIonicApp</string>
+    <string name="package_name">com.App.DemoIonicApp</string>
+    <string name="custom_url_scheme">com.App.DemoIonicApp</string>
+</resources>
